@@ -1,0 +1,11 @@
+[project]
+name = "pytest-workshop"
+version = "1.0.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+addopts = "-v --junit-xml=report.xml"
+junit_family = "xunit2"
+junit_logging = "all"
+markers = ["req_id(id): Requirement ID"]

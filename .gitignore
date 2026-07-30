@@ -1,0 +1,63 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pytest / Testing / Coverage ----
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+
+# Generated test reports
+report.html
+report.xml
+
+# ---- Nix ----
+result
+result-*
+.direnv/
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ---- mypy / linting ----
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
