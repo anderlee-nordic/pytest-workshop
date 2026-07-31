@@ -14,7 +14,7 @@ HEX_VER = "v23.7.99-debug+127"
 
 @pytest.mark.usefixtures("read_bootstatus")
 class TestBootReport:
-    # @pytest.mark.xfail(reason="simulate device get stuck in reset loop")
+    @pytest.mark.xfail(reason="simulate device get stuck in reset loop")
     def test_boot_status(self, request, revive_on_failure):
         try:
             assert False

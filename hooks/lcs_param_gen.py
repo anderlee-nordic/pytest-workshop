@@ -10,5 +10,9 @@ def pytest_addoption(parser):
 
 
 def pytest_generate_tests(metafunc):
-    if "state" in metafunc.fixturenames:
+    marked = {
+        n for m in metafunc.definition.iter_markers("parametrize") \
+        for n in m.args[0].split(",")
+    }
+    if "state" in metafunc.fixturenames and "state" not in marked:
         metafunc.parametrize("state", metafunc.config.getoption("lcs_state"))
